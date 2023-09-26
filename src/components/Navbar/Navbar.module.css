@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(243,241,246,255);
+    width: 100%;
+    height: 110px;
+    border-bottom: #6e1e51 solid 0.3px;
+}
+
+.active {
+    color: red
+}
+.inactive{
+    color: black;
+}

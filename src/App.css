@@ -1,0 +1,41 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Logo {
+  height: 100px;
+  will-change: filter;
+  border-radius: 50%;
+  filter: drop-shadow(0px);
+  transition: filter 300ms ease-in-out; /* Combina las reglas de transición */
+}
+
+.Logo:hover {
+  filter: drop-shadow(0 2px 2px #6e1e51);
+  cursor: pointer;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
