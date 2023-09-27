@@ -1,0 +1,10 @@
+.cartBtn svg {
+    /* Cambia el color de relleno */
+    fill: #6e1e51;
+  
+    /* Cambia el tamaño del ícono */
+    height: 28px;
+    width: 28px;
+  
+    /* Otros estilos personalizados */
+  }

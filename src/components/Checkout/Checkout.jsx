@@ -17,7 +17,7 @@ const Checkout = () => {
             const objOrder = {
                 buyer: {
                     name: 'Martin Villafañe',
-                    phone: '1234456756',
+                    phone: '215456756',
                     email: 'contact@Tincho.io'
                 },
                 items: cart,

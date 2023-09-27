@@ -12,8 +12,13 @@ const Cart = () => {
                     cart.map(prod => {
                         return (
                             <div key={prod.id} style={{ display: 'flex', justifyContent: 'space-around'}}>
-                                <h1>{prod.name}</h1>
-                                <button onClick={() => removeItem(prod.id)}>remove</button>
+                                <img style={{width:180}}>{prod.img}</img>
+                                <h2 style={{
+                                    margin:0
+                                }}>{prod.name}</h2>
+                                <button style={{
+                                    marginRight:50,
+                                }} onClick={() => removeItem(prod.id)}>Eliminar</button>
                             </div>
                         )
                     })

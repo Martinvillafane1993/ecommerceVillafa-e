@@ -66,7 +66,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
     }
 
     return (
-        <article>
+        <article style={{height:400}}>
             <button onClick={() => setInputType(inputType === 'input' ? 'button' : 'input')}>
                 Cambiar contador
             </button>
@@ -76,7 +76,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
                 </h2>
             </header>
             <picture>
-                <img src={img} alt={name} style={{ width: 100}}/>
+                <img src={img} alt={name} style={{ width: 180}}/>
             </picture>
             <section>
                 <p>
@@ -86,7 +86,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
                     Descripción: {description}
                 </p>
                 <p>
-                    Precio: {price}
+                    Precio: $ {price}
                 </p>
             </section>           
             <footer>
@@ -94,7 +94,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
                     quantity === 0 ? (
                         <ItemCount onAdd={handleOnAdd} stock={stock}/>
                     ) : (
-                        <Link to='/cart'>Finalizar compra</Link>
+                        <Link className='btnLink' to='/cart'>Finalizar compra</Link>
                     )
                 }
             </footer>

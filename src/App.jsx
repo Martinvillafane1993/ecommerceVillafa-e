@@ -21,7 +21,14 @@ const App = () => {
               <Route path='/detail/:productId' element={<ItemDetailContainer />} />
               <Route path='/cart' element={<Cart />} />
               <Route path='/checkout' element={<Checkout />} />
-              <Route path='*' element={<h1>Error 404 Not Found</h1>} />
+              <Route path='*' element={<div className='bg404'>
+                <h1 style={{
+                  position:'relative',
+                  top:570,
+                  right:470,
+                  fontSize:65,
+                }}>Error 404 Not Found</h1>
+                </div>} />
               </Routes>
           </BrowserRouter>
         </CartProvider>

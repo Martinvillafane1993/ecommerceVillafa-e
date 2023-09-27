@@ -1,3 +1,11 @@
-.greeting {
-    color: red
+@font-face {
+    font-family: Under;
+    src: url(../Fonts/Under\ Station.ttf) format('truetype');
+  }
+  
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-// import { getProductById } from "../../asyncMock"
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from "react-router-dom"
 import { db } from "../../services/firebase/firebaseConfig"
@@ -35,7 +34,7 @@ const ItemDetailContainer = () => {
     }
 
     return (
-        <main style={{ background: 'pink'}}>
+        <main style={{ background: 'white'}}>
             <h1>Detalle del producto</h1>
             <ItemDetail {...product} />
         </main>

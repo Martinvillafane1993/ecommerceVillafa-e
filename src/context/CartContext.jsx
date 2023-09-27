@@ -11,8 +11,6 @@ export const CartProvider = ({ children }) => {
         setCart(prev => [...prev, productToAdd])
       } else {
         console.log('hay que actualizar la cantidad')
-        // const updatedCart = cart.map()
-        // setCart(updatedCart)
       }
     } 
   

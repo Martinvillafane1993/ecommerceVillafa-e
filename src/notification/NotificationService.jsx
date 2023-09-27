@@ -5,10 +5,17 @@ const Notification = ({ data }) => {
       position: 'absolute',
       top: 100,
       right: 30,
-      backgroundColor: data.type === 'success' ? 'green' : 'red',
+      backgroundColor: data.type === 'success' ? 'red' : '#6e1e51',
       color: 'white',
       padding: '10px 20px 10px 20px',
       fontSize: 20,
+      fontFamily: 'Raleway',
+      fontWeight: 500,
+      paddingTop:50,
+      lineHeight:1.5,
+      height:250,
+      width:250,
+      textAlign:'center',
       borderRadius: 10
     }
 
