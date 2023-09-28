@@ -66,7 +66,7 @@ const ItemDetail = ({ id, name, category, img, price, stock, description }) => {
     }
 
     return (
-        <article style={{height:400}}>
+        <article style={{height:500}}>
             <button onClick={() => setInputType(inputType === 'input' ? 'button' : 'input')}>
                 Cambiar contador
             </button>

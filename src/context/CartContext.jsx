@@ -4,7 +4,6 @@ const CartContext = createContext('Este valor lo ven aquellos que esten fuera de
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    console.log(cart)
   
     const addItem = (productToAdd) => {
       if(!isInCart(productToAdd.id)) {

@@ -44,10 +44,14 @@ const ItemListContainer = ({ greeting }) => {
     }
 
     return (
-        <main className='mainItem' style={{ background: 'white'}} onClick={() => console.log('itemlistcontainer')}>
-            <img src="" alt="" />
-            <h1>{greeting}</h1>
+        <main id='itemListContainer'>
+            <div className='mainItem'>
+            <section className='ItemL_img' />
+            <h1 id='welcomeH1'>{greeting}</h1>
+            </div>
+            <div id='cardContainer'>
             {products.length > 0 ? <ItemListMemo products={products}/> : <h1>No hay productos disponibles</h1> }
+            </div>
         </main>
     )
 }

@@ -9,12 +9,14 @@ const Item = ({ id, name, img, price }) => {
 
 
     return (
-        <div className="card" onClick={handleClick}>
-            <h3 className="itemName">{name}</h3>
-            <img src={img} style={{ width: 180}}/>
-            <p className="itemPrice">Precio: $ {price}</p>
-            <Link className="btnLink" to={`/detail/${id}`} >Ver Detalle</Link>
-        </div>
+        <Link to={`/detail/${id}`} className="card" onClick={handleClick}>
+                <h3 className="itemName">{name}</h3>
+                <img src={img} style={{ width: 180}}/>
+                <p className="itemPrice">Precio: $ {price}</p>    
+            
+            </Link>
+
+            // <Link className="btnLink" } >Ver Detalle</Link>
     )
 }
 

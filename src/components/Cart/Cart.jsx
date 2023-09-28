@@ -11,10 +11,9 @@ const Cart = () => {
                 {
                     cart.map(prod => {
                         return (
-                            <div key={prod.id} style={{ display: 'flex', justifyContent: 'space-around'}}>
-                                <img style={{width:180}}>{prod.img}</img>
+                            <div key={prod.id} style={{ display: 'flex', justifyContent: 'space-between', margin:50}}>
                                 <h2 style={{
-                                    margin:0
+                                    marginLeft:45
                                 }}>{prod.name}</h2>
                                 <button style={{
                                     marginRight:50,
@@ -24,8 +23,10 @@ const Cart = () => {
                     })
                 }
             </section>
-            <h2>Total: ${total}</h2>
-            <Link to='/checkout'>Checkout</Link>
+            <h2 style={{
+                margin:50
+            }}>Total: $ {total}</h2>
+            <Link className='btnLink' to='/checkout'>Checkout</Link>
         </>
     )
 }

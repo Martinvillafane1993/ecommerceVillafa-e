@@ -11,7 +11,7 @@ const Navbar = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        const categoryRef = query(collection(db, 'category'), orderBy('order', 'asc'))
+        const categoryRef = query(collection(db, 'category'))
         
         getDocs(categoryRef)
             .then(querySnapshot => {
@@ -34,9 +34,8 @@ const Navbar = () => {
                 
                 {
                     category.map(cat => (
-                        <NavLink key={cat.id} to={`/category/${cat.slug}`} className={({ isActive }) => isActive ? classes.active : classes.inactive  }>{cat.name}</NavLink>
+                        <NavLink key={cat.id} to={`/category/${cat.category}`} className={({ isActive }) => isActive ? classes.active : classes.inactive  }>{cat.category}</NavLink>
                     ))
-                    
                 }
             </section>
             <CartWidget />

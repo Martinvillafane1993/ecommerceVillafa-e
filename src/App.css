@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
 body{
@@ -11,11 +10,23 @@ body{
 }
 
   h1{
+    margin: 0px 0 25px 0;
+    padding-top: 25px;
     font-family: 'Rubik Distressed', cursive;
     font-weight: 300;
     font-size: 55px;
     color: rgba(0, 0, 0, 0.822);
+    grid-column: 1 / span 3;
   }
+
+  #itemListContainer{
+    background-image: url(../src/components/assets/Img/persona-bicicleta.jpg);
+    background-position: center 20% ;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+        }
 
 .Logo {
   height: 100px;
@@ -25,6 +36,37 @@ body{
   transition: filter 300ms ease-in-out;
   cursor: pointer;
 }
+
+._inactive_1d55o_13{
+  color: gray;
+    margin: 20px;
+    position: relative;
+    top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    transition: 1.2s;
+
+}
+._active_1d55o_10{
+  background-color: #6e1e51;
+  color: white!important;
+  text-decoration: none;
+  padding: 10px;
+  padding-bottom: 46px;
+  border-top-left-radius: 15px;
+  border-top-right-radius:15px ;
+  margin: 20px;
+  position: relative;
+  top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  transition: 1.2s;
+}
+
+
 #text{
   font-size: 20px;
 }
@@ -61,7 +103,6 @@ button:hover{
   font-weight: 900;
   color: gray;
 }
-
 .btnLink{
   text-decoration: none;
   background-color:#6e1e51;
@@ -93,25 +134,83 @@ button:hover{
   height: 800px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#welcomeH1{
+  color: white;
 }
-
+#cardContainer{
+  display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 60px;  
+  height: 1800px;
+}
 .card {
-  padding: 2em;
+  margin: 30px 0 25px 80px;
+  background-color: white;
+  max-height: 400px;
+  width: 250px;
+  padding: 2ex;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 5px solid transparent; 
+  border-image: linear-gradient(to top, gray 40%, #6e1e51); 
+  border-image-slice: 1; 
+  transition: 2s ease;
+  cursor: pointer;
 }
-
+.card:hover{
+  transition: 1.2s;
+  transform: scale(1.1);
+}
 .read-the-docs {
   color: #888;
+}
+#h1Check{
+  position: relative;
+  right: 350px;
+  top: 50px;
+  font-size:65px;
+  color: black;
+}
+#h2Check{
+  position: relative;
+  top: 65px;
+  font-size:35px;
+  font-weight: 1000;
+}
+.formContainer{
+  width: 100%;
+  height: 700px;
+  background-image: url(../src/components/assets/Img/mountain-bike-841845_1280.jpg);
+  background-size: cover;
+  background-position: center;
+}
+form{
+  text-align: center;
+  width: 30%;
+  position: relative;
+  background-color: #52515181;
+  position: relative;
+  left: 35%;
+  top: 150px;
+}
+.labelInput{
+  height: 70px;
+  width: 350px;
+  color: white;
+}
+label{
+  font-size: 20px;
+  padding-right: 25px;
+  position: absolute;
+  left: 160px;
+}
+input{
+  height: 18px;
+  position: relative;
+  top: 35px;
+  left: 20px;
+}
+#btnCheck{
+  margin: 30px 0 25px 0;
 }
